@@ -24,6 +24,11 @@ body {
     width: 80vw;
     margin: 0 auto;
 }
+nav > .logo-container > .logo {
+    padding-top: 50px;
+    width: 145px;
+    height: 32px;
+}
 .first-pattern {
     float: right;
     margin-top: -45px;
@@ -34,11 +39,6 @@ body {
 header {
     overflow: hidden;
     height: 500px;
-}
-header > .logo-container > .logo {
-    padding-top: 50px;
-    width: 145px;
-    height: 32px;
 }
 .header-context {
     display: flex;
