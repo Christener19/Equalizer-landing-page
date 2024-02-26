@@ -1,0 +1,126 @@
+/* Colors to be used */
+:root {
+--skyblue:#66E2DC;
+--orange:#FA7453;
+--yellow:#FFB964;
+--white:#FCFAF9;
+--black:#191826;
+}
+/* Repeating styles */
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-image: url(./assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+/*--Header--*/
+header {
+    overflow: hidden;
+    height: 500px;
+}
+header > .logo {
+    padding: 50px 50px 0 50px;
+    width: 145px;
+    height: 32px;
+}
+.first-pattern {
+    float: right;
+    margin-top: -95px;
+    width: 312px;
+    height: 430px
+}
+
+.header-context {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 60%;
+    margin:20px 50px 0 50px;
+}
+
+
+/*--Main--*/
+.main-container {
+    display: flex;
+    background-color: var(--black);
+ /* margin: 0 20px; */
+  height: 600px;
+  margin-bottom: 87px;
+}
+.second-pattern {
+    width: 250px;
+    height: 375px;
+}
+.phone {
+    width: 280px;
+    height: 616px;
+}
+.card-container {
+    background-color: var(--orange);
+    color: var(--white);
+    width: 446px;
+    height: 625px;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.card-container > a {
+    display: inline-block;
+    border-radius: 12px;
+    width: 333px;
+    height: 61px;
+    text-align: center;
+}
+.apple {
+    background-color: var(--black);
+    color: var(--white);
+}
+.android {
+    color: var(--black);
+    background-color: var(--white);
+}
+/*--Footer--*/
+footer {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+.footer-text > p {
+    margin: 0;
+}
+.footer-text {
+    width: 366px;
+    margin: 0;
+}
+.icons-container {
+    width: 100px;
+}
+.icons-container > a > img {
+    padding: 0 5px;
+}
+
+
+
+
+/*--Tablet Version--*/
+@media (min-width: 500px) and (max-width: 900px){
+body {
+    background-image: url(./assets/bg-main-tablet.png);
+}
+}
+
+/*--Mobile Version--*/
+@media (min-width: 100px) and (max-width: 500px){
+body {
+    background-image: url(./assets/bg-main-mobile.png);
+}
+} 
