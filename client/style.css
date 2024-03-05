@@ -75,35 +75,35 @@ header {
     justify-content: center;
     background-color: var(--black);
     width: 80vw;
-    margin: 60px auto 170px auto;
+    margin: 60px auto 200px auto;
     height: 600px;
     border-radius: 12px;
 }
 .second-pattern {
     position: relative;
-    width: 18vw;
-    height: 375px;
-    top: 45px;
-    left: 20px;
+    width: 250px;
+    height: 425px;
+    top: 0px;
+    left: -20px;
 }
 .phone {
     position: relative;
     width: 280px;
-    height: 540px;
+    height: 550px;
     z-index: 2;
-    top: -100px;
-    left: 30px;
+    top: -110px;
+    left: 45px;
 }
 .card-container {
     background-color: var(--orange);
     color: var(--white);
-    width: 23vw;
+    width: 25vw;
     height: auto;
     border-radius: 2%;
     padding: 25px;
     display: flex;
     position: relative;
-    right: 30px;
+    right: 90px;
     top: 150px;
 }
 .four-dollar {
