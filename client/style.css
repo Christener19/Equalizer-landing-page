@@ -17,20 +17,23 @@ h1 {
 font-size: 4vw;
 }
 h2 {
-    font-size: 3.5vw;
+    font-size: 3.4vw;
 }
-/* p {
-    font-size: 1.8vw;
-} */
 
 
 body {
     margin: 0;
     background-image: url(./assets/bg-main-desktop.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: top left;
     font-size: 20px;
     font-family: "IBM Plex Sans", sans-serif;
+}
+.sr-only {
+    position: absolute;
+    /* overflow: hidden; */
+    clip: rect(0, 0, 0, 0);
 }
 /*--Nav --*/
 .logo-container {
@@ -42,6 +45,11 @@ nav > .logo-container > .logo {
     width: 145px;
     height: 32px;
 }
+.img-container {
+    overflow: hidden;
+    width: fit-content;
+    float: right;
+  }
 .first-pattern {
     float: right;
     margin-top: -45px;
@@ -97,20 +105,22 @@ header {
 .card-container {
     background-color: var(--orange);
     color: var(--white);
-    width: 25vw;
-    height: auto;
-    border-radius: 2%;
+    width: 30vw;
+    height:fit-content;
+    border-radius: 12px;
     padding: 25px;
     display: flex;
     position: relative;
-    right: 90px;
+    right: 80px;
     top: 150px;
 }
+
 .four-dollar {
     font-size: 4.5vw;
 }
 .card-container > .second-card-container a {
     display: flex;
+    font-size: 18px;
     border-radius: 12px;
     width: auto;
     height: 61px;
@@ -141,6 +151,7 @@ footer {
     justify-content: space-around;
     margin-bottom: 90px;
 }
+
 .footer-text > p {
     margin: 0;
 }
@@ -159,11 +170,79 @@ footer {
 
 
 /*--Tablet Version--*/
-@media (min-width: 500px) and (max-width: 900px){
+@media (min-width: 500px) and (max-width: 951px){
+    h1 {
+        font-size: 5vw;
+        }
+        h2 {
+            font-size: 4.4vw;
+        }
+
 body {
     background-image: url(./assets/bg-main-tablet.png);
+    background-size: contain;
+}
+
+/*--Nav --*/
+.logo-container {
+    width: 90vw;
+}
+.first-pattern {
+    margin-right: -30px;
+    width: 231px;
+    height: 368px;
+}
+/*--Header--*/
+.header-container {
+    width: 90vw;
+}
+.p-header{
+    width: 100%;
+}
+/* Main */
+.main-container {
+    background-color: var(--black);
+    width: 90vw;
+    height: 600px;
+    border-radius: 12px;
+}
+.phone {
+    z-index: 1;
+    left: 155px;
+}
+.second-pattern {
+    position: relative;
+    width: 250px;
+    height: 425px;
+    top: 0px;
+    left: 90px;
+}
+.card-container {
+    width: 39vw!important;
+    right: 170px;
+    top: 170px;
+    z-index: 2;
+    flex: 0 0 auto; /* This will stop it from shrinking because the first 0 is grow the second 0 is shrink, if it was 1 which is the default it would shrink. Applying this allowed me to do a fix width whilst still having flex */
+}
+
+
+/* Footer */
+footer {
+    width: 90vw;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    margin: 50px auto;
+}
+.footer-text {
+    margin: 30px 0 -30px;
+    text-align: left;
+}
+.icons-container {
+    margin-left: auto;
 }
 }
+
 
 /*--Mobile Version--*/
 @media (min-width: 100px) and (max-width: 500px){
