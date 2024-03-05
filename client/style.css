@@ -10,6 +10,19 @@
 a {
     text-decoration: none;
 }
+h1, h2 {
+    margin-top: 0;
+}
+h1 {
+font-size: 4vw;
+}
+h2 {
+    font-size: 3.5vw;
+}
+/* p {
+    font-size: 1.8vw;
+} */
+
 
 body {
     margin: 0;
@@ -51,10 +64,6 @@ header {
     margin: auto;
     height: 100%;
 }
-.h1-container > h1 {
- font-size: 4vw;
- margin-top: 0;
-}
 .p-header{
     width: 80%;
 }
@@ -63,46 +72,51 @@ header {
 /*--Main--*/
 .main-container {
     display: flex;
+    justify-content: center;
     background-color: var(--black);
     width: 80vw;
-    margin: 0 auto;
+    margin: 60px auto 170px auto;
     height: 600px;
-    margin-bottom: 170px;
     border-radius: 12px;
 }
 .second-pattern {
     position: relative;
-    width: 250px;
+    width: 18vw;
     height: 375px;
     top: 45px;
-    left: 30px;
+    left: 20px;
 }
 .phone {
     position: relative;
     width: 280px;
-    height: 616px;
+    height: 540px;
     z-index: 2;
-    top: -200px;
-    left: 100px;
+    top: -100px;
+    left: 30px;
 }
 .card-container {
     background-color: var(--orange);
     color: var(--white);
-    width: 350px;
+    width: 23vw;
     height: auto;
     border-radius: 2%;
+    padding: 25px;
     display: flex;
-    flex-direction: column;
     position: relative;
-    right: 40px;
+    right: 30px;
     top: 150px;
 }
-.card-container > a {
-    display: inline-block;
+.four-dollar {
+    font-size: 4.5vw;
+}
+.card-container > .second-card-container a {
+    display: flex;
     border-radius: 12px;
-    width: 333px;
+    width: auto;
     height: 61px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
 }
 .apple {
     background-color: var(--black);
