@@ -142,7 +142,7 @@ header {
     background-color: var(--white);
 }
 .android:hover{
-    background-color: var(--orange);
+    background-color: var(--yellow);
 }
 
 /*--Footer--*/
@@ -259,7 +259,6 @@ footer {
     }
 
 body {
-    width: 100%;
     background-image: url(./assets/bg-main-mobile.png);
     background-size: contain;
     background-position: top right;
@@ -272,9 +271,7 @@ body {
 }
 
 /* Header */
-.p-header {
-    width: 100%;
-}
+
 
 /* Main */
 .main-container {
@@ -282,10 +279,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     margin: 100px 0 500px 0;
     height: 500px;
-    padding: 25px;
 }
 .second-pattern {
     left: 0px;
@@ -303,16 +299,20 @@ body {
     width: 80%;
 }
 .card-container {
-    width: 100%;
+    width: 90%;
     margin: 0;
     flex: 0 0 auto;
     top: -20px;
     right: 0px;
+    padding: 5%;
 }
 .four-dollar {
     font-size: 15vw;
 }
 
+.card-container > .second-card-container a {
+    width: 85%;
+}
 
 
 /* Footer */
@@ -326,6 +326,9 @@ footer {
 .footer-text {
     width: 100%;
     text-align: left;
+    padding-top: 10px;
 }
-
+.icons-container {
+    padding-top: 15px;
+}
 } 
