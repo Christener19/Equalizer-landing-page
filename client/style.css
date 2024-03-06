@@ -12,9 +12,11 @@ a {
 }
 h1, h2 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 h1 {
-font-size: 4vw;
+font-size: 6vw;
+line-height: 100%;
 }
 h2 {
     font-size: 3.4vw;
@@ -59,7 +61,7 @@ nav > .logo-container > .logo {
 /*--Header--*/
 header {
     height: 500px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .header-container {
     width: 80vw;
@@ -172,11 +174,11 @@ footer {
 /*--Tablet Version--*/
 @media (min-width: 500px) and (max-width: 951px){
     h1 {
-        font-size: 5vw;
+        font-size: 8vw;
         }
-        h2 {
-            font-size: 4.4vw;
-        }
+    h2 {
+        font-size: 4.8vw;
+    }
 
 body {
     background-image: url(./assets/bg-main-tablet.png);
@@ -208,23 +210,25 @@ body {
 }
 .phone {
     z-index: 1;
-    left: 155px;
+    left: 165px;
 }
 .second-pattern {
     position: relative;
-    width: 250px;
+    width: 225px;
     height: 425px;
     top: 0px;
     left: 90px;
 }
 .card-container {
-    width: 39vw!important;
+    width: 45vw;
     right: 170px;
     top: 170px;
     z-index: 2;
     flex: 0 0 auto; /* This will stop it from shrinking because the first 0 is grow the second 0 is shrink, if it was 1 which is the default it would shrink. Applying this allowed me to do a fix width whilst still having flex */
 }
-
+.four-dollar {
+    font-size: 7vw;
+}
 
 /* Footer */
 footer {
@@ -245,8 +249,83 @@ footer {
 
 
 /*--Mobile Version--*/
-@media (min-width: 100px) and (max-width: 500px){
+@media (min-width: 100px) and (max-width: 499px){
+   
+    h1 {
+        font-size: 13vw;
+    }
+    h2 {
+        font-size: 12vw;
+    }
+
 body {
+    width: 100%;
     background-image: url(./assets/bg-main-mobile.png);
+    background-size: contain;
+    background-position: top right;
+   
 }
+
+/* nav */ 
+.img-container {
+    display: none;
+}
+
+/* Header */
+.p-header {
+    width: 100%;
+}
+
+/* Main */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 100px 0 500px 0;
+    height: 500px;
+    padding: 25px;
+}
+.second-pattern {
+    left: 0px;
+    top: 0px;
+    max-width: 80%;
+    min-width: 275px;
+    width: 90%;
+}
+.phone {
+    z-index: 2;
+    left: 0px;
+    top: 350px;
+    max-width: 65%;
+    min-width: 240px;
+    width: 80%;
+}
+.card-container {
+    width: 100%;
+    margin: 0;
+    flex: 0 0 auto;
+    top: -20px;
+    right: 0px;
+}
+.four-dollar {
+    font-size: 15vw;
+}
+
+
+
+/* Footer */
+footer {
+    width: 90%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    margin: 50px auto;
+}
+.footer-text {
+    width: 100%;
+    text-align: left;
+}
+
 } 
