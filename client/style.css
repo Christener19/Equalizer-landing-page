@@ -271,7 +271,9 @@ body {
 }
 
 /* Header */
-
+header {
+    margin-top: 50px;
+}
 
 /* Main */
 .main-container {
@@ -280,7 +282,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin: 100px 0 500px 0;
+    margin: 175px 0 500px 0;
     height: 500px;
 }
 .second-pattern {
